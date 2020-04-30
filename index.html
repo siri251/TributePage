@@ -1,6 +1,11 @@
 <html>
 <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <style>
+    
+#body{
+    background: #f1f1f1;
+}
 #container{
     border:1px red;
     width:80%
@@ -21,6 +26,7 @@
     text-align:center;
     font-family:trebuchet ms;
     position:relative;
+    margin-top: -5px;
     animation-name:tit1;
     animation-duration:1s;
     animation-iteration-count:infinite;
@@ -66,7 +72,12 @@
 
 }
 #tribute-info{
-    padding:10px;
+    padding:20px;
+    line-height:35px;
+    font-family:sans-serif;
+}
+#awards{
+    padding:20px;
     line-height:35px;
     font-family:sans-serif;
 }
@@ -80,18 +91,30 @@ p{
     line-height:35px;
     font-family:sans-serif;
 }
+#icon{
+    color:lightseagreen;;
+    transition: color 0.3s ease-in;
+}
+#title:hover #icon{
+    color: black;
+}
 #quote{
     font-family:'Courier New', Courier, monospace;
-    text-align:center;
+    text-align:left;
     line-height:25px;
     max-width:50%;
     max-height:40%;
     margin:auto;
-    background:linear-gradient(90deg,grey,darkgray);
-    padding:10px;
+    background:linear-gradient(270deg,grey,darkgray);
+    padding:15px;
     border-radius:10px;
-
 }   
+#quote h3{
+    margin-top: -1px;
+    text-align: right;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 300;
+}
 #quote:hover{
     transform:scale(1.02);
     border:1px solid black;
@@ -101,13 +124,13 @@ p{
 </head>
 <body>
 <div id="main">
-<div id="title">Saina Nehwal</div>
+<div id="title"><i class="material-icons" id="icon">sports_tennis</i>&nbsp;Saina Nehwal&nbsp;<i class="material-icons" id="icon">sports_tennis</i></div>
 
-<div id="img-div"><img id="image" src="Nehwal-YE_571_855.jpeg" alt="some image">
-    <div id="img-caption"><br><h3><i>sania's image</i></h3></div></div>
-<hr>
+<div id="img-div"><img id="image" src="Nehwal-YE_571_855.jpg" alt="some image">
+<div id="img-caption">sania's image</div></div>
+<hr><br>
 <div id="quote">"You can't let the highs make you feel overconfident nor can 
-                you let the lows be a reason to dampen your spirit"<br>-Saina Nehwal</div>
+                you let the lows be a reason to dampen your spirit"<br><h3>-Saina Nehwal</h3></div>
 <div id="tribute-info">Saina Nehwal is the first-ever badminton player from India to clinch an Olympic medal. The Indian shuttler created history when she won the bronze medal at the London 2012 Games.
 
     The Haryana shuttler started turning heads very early on in her career when she won the BWF World Junior Championships in 2008.
@@ -118,13 +141,17 @@ p{
     En route to becoming the first Indian woman to reach the last eight of Olympic quarter-finals, a young Saina Nehwal defeated the then world number five Wang Chen of Hong Kong before losing to Indonesia's Maria Kristin Yulianti in the quarter-finals of Beijing 2008.
 </div>
 
-<h3>Awards</h3>
+<h3 style="text-align: center;">Awards</h3>
+<div id="awards">
 <p>Saina Nehwal has received 4 awards from the Government of India. She won the Arjuna Award for Badminton in 2009.
 
 A year later in 2010, she won the Padma Shri and Rajiv Gandhi Khel Ratna, which is the highest sports honour in India.
  She was also awarded the Padma Bhushan in 2016 for her outstanding performance in the sport.
-</p>
-<footer><p>for more information about her:<a id="tribute-link" href="https://en.wikipedia.org/wiki/Saina_Nehwal" TARGET="_blank">CLICK HERE</a></p></footer>
+</p></div>
+<footer><p style="text-align: center;">
+    <em>for more information about
+        <a id="tribute-link" href="https://en.wikipedia.org/wiki/Saina_Nehwal" 
+        TARGET="_blank"> Saina Nehwal</a></em></p></footer>
 
 </div>
 
